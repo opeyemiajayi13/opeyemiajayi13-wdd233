@@ -1,0 +1,118 @@
+@media screen and (min-width: 700px) {
+
+    .header-container {
+        flex-wrap: nowrap;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin: 0;
+        gap: 15px;
+    }
+
+    nav a {
+        border: none;
+        padding: 12px;
+    }
+
+    .directory-top {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-development {
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+
+    .footer-development {
+        grid-column: auto;
+        border-top: none;
+        padding-top: 0;
+    }
+}
+
+/* List view */
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.members-list .member-card {
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 18px;
+    gap: 20px;
+    border: none;
+    border-bottom: 1px solid var(--border);
+}
+
+.members-list .member-card:nth-child(even) {
+    background: #e9eef3;
+}
+
+.members-list .member-card img {
+    display: none;
+}
+
+.members-list .member-info {
+    padding: 0;
+    flex: 1;
+}
+
+.members-list .member-info h3 {
+    font-size: 17px;
+}
+
+.members-list .member-info p {
+    margin-bottom: 4px;
+}
+
+.members-list .website-link {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 400px) {
+    .view-controls {
+        flex-wrap: wrap;
+    }
+
+    .view-button {
+        padding: 9px 12px;
+    }
+
+    .brand-name h1 {
+        font-size: 14px;
+    }
+}
